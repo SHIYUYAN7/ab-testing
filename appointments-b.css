@@ -76,6 +76,9 @@
     margin-bottom: 0;
     color: #868686;
 }
+.appointment-title{
+    margin-bottom: 9px;
+}
 
 .appointment-title {
     font-size: 24px;
@@ -101,7 +104,18 @@
     width: 180px;
     height: 45px;
     color: white;
+    /* text-shadow: 1px 1px 6px #707070;  */
+    font-weight: bold;
 }
+.working-button:hover{
+    background-color: #BDD4FF;
+    font-size: 15px;
+}
+.defunct-button:hover{
+    background-color: #BDD4FF;
+    font-size: 15px;
+}
+
 }
 
 .success-dialog {
