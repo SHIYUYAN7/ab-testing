@@ -76,6 +76,14 @@
     margin-bottom: 0;
     color: #868686;
 }
+.appointment-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #5870B1;
+
+    font-size: 20px;
+    font-family: 'PPNeueMontrealBook';
+}
 .appointment-title{
     margin-bottom: 9px;
 }
@@ -97,7 +105,7 @@
     gap: 10px;
     padding-left: 45%;
 
-.defunct-button, .working-button {
+.defunct-button {
     background-color: #D4E8FF;
     border: none;
     border-radius: 9px;
@@ -107,13 +115,15 @@
     /* text-shadow: 1px 1px 6px #707070;  */
     font-weight: bold;
 }
-.working-button:hover{
+
+.make-appointment, .working-button{
     background-color: #BDD4FF;
-    font-size: 15px;
-}
-.defunct-button:hover{
-    background-color: #BDD4FF;
-    font-size: 15px;
+    border: none;
+    border-radius: 9px;
+    width: 180px;
+    height: 45px;
+    color: white;
+    font-weight: bold;
 }
 
 }
