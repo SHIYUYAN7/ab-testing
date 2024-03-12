@@ -62,9 +62,11 @@ h3 {
 .small-title-style{
     color: #5870B1;
     font-size: 2vmin;
+    font-weight: 600;
     margin-bottom: 1vmin;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .paragraph-space{
     height: 4vmin;
