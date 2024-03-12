@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Submission Page</title>
+        <!-- import CSS styles -->
+        <link rel="stylesheet" href="handin.css" /> 
+        <meta name="author" content="Shiyu Yan">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>Handin Webpage</h1>
+                <div class="small-content-style">By Shiyu Yan</div>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <div class="paragraph-space"></div>
+                <section id="introduction">
+                    <h2>A/B Testing Assignment</h2>
+                    <div class="small-paragraph-space"></div>
+                    <div class="small-content-style"><span class="first-letter">W</span>hen you log into your favorite apps, you may notice some subtle changes: buttons are more prominent, and everything seems easier to navigate. Behind this seamless experience is often a process called A/B testing, where designers compare two versions of the page against each other to determine which one performs better.</div>
+                    <div class="small-paragraph-space"></div>
+                    <div class="small-content-style">The aim of this project is to reveal the effectiveness of two different user interface designs (version A and version B) in improving user engagement and efficiency. We wanted to address the question of whether one design was significantly better than the other in terms of user interaction metrics such as misclicks, time on page, and time to first click.  By presenting the designs to a sample of users and collecting data on their interactions, A/B testing with statistical analysis allowed us to isolate the impact of the design changes.</div>
+                </section>
+                <div class="paragraph-space"></div>
+                <section id="data-collection">
+                    <h3>Data Collection</h3>
+                    <div class="small-content-style">The <a class="hyperlink" href="a.html" aria-label="go to Version A">Version A</a> (Left below) is origin page before revising. The <a class="hyperlink" href="b.html" aria-label="go to Version B">Version B</a> 
+                        (Right below) is the interface after we have modified it. Though a traditional A/B test randomly assigns users to either version A or version B, this will allow us to collect enough data for the later parts.</div>
+                    <div class="version-web-container">
+                        <img src="version-A.png" alt="version-A" class="version-A" />
+                        <img src="version-B.png" alt="version-B" class="version-B" />
+                    </div>
+                    <div class="small-title-style">The changes made between the two versions</div>
+                    <div class="change-made">
+                        <div>Setting the background color of the "Submit Appointment" and "See Appointment" buttons to different colors.</div>
+                        <br>
+                        <div>Adjusting the line spacing between the appointment information.</div>
+                        <br>
+                        <div>Adjusting the color of the doctor's name to make it stand out more in comparison to the rest.</div>
+                    </div>
+                    <div class="paragraph-space"></div>
+                    <div class="small-content-style"><span class="first-letter">A</span>s we get into A/B testing, our first step was to present our designs to a group of 25 users. The hypothesis was simple: could changing the color of a button or adjusting the spacing between lines of text make a noticeable difference in user experience? Analyzing misclick rates, time for first click,  and time spent on the page, we discovered the effect design elements have on user behavior. In general, we hypothesized that version B, with its intuitive design, would outperform version A.</div>
+                </section>
+                <div class="paragraph-space"></div>
+                <section id="create-hypothesis">
+                    <h3>Create Hypothesis</h3>
+                    <div class="small-title-style">Misclick rate: the frequency with which users click something else on the page before finding the correct button for the task.</div>
+                    <div class="hyp-container">
+                        <div class="null-hyp">
+                            <div class="small-content-style"><span class="sub-title">Null Hypothesis: </span>Users interacting with Version A will have the same false positive rate as users interacting with Version B.</div>
+                            <div class="small-paragraph-space"></div>
+                            <div class="small-content-style"><span class="sub-title">Predictions with justification: </span>We would reject the null hypothesis if the buttons in Version B's user interface are more intuitive and obvious, resulting in a lower false click rate.</div>
+                        </div>
+                        <div class="hyp-vertical-line"></div>
+                        <div class="alter-hyp">                            
+                            <div class="small-content-style"><span class="sub-title">Alternative hypothesis: </span>Users interacting with Version B have a lower false click rate than users interacting with Version A.</div>
+                            <div class="small-paragraph-space"></div>
+                            <div class="small-content-style"><span class="sub-title">Reasoning: </span>In version A, both buttons have the same background color. In contrast, in version B, the background color of the "Submit Appointment" and "View Appointment" buttons were set to different colors to reduce the likelihood of false clicks by users. This design change makes it easier for users to distinguish between the two functions, thus reducing the chance of misclicks.</div>
+                        </div>
+                    </div>
+                    <div class="paragraph-space"></div>
+                    <div class="small-title-style">Time on page: time spent on the webpage for each user group.</div>
+                    <div class="hyp-container">
+                        <div class="null-hyp">
+                            <div class="small-content-style"><span class="sub-title">Null Hypothesis: </span>There is no difference in the amount of time users spend on the page between version A and version B.</div>
+                            <div class="small-paragraph-space"></div>
+                            <div class="small-content-style"><span class="sub-title">Predictions with justification: </span>If Version B presents information more intuitively and the interaction design is more user-friendly, allowing users to complete tasks more quickly, we might predict that the null hypothesis will be rejected.</div>
+                        </div>
+                        <div class="hyp-vertical-line"></div>
+                        <div class="alter-hyp">                            
+                            <div class="small-content-style"><span class="sub-title">Alternative hypothesis: </span>Users of version B spend less time on the page compared to version A.</div>
+                            <div class="small-paragraph-space"></div>
+                            <div class="small-content-style"><span class="sub-title">Reasoning: </span>All appointment information in Version A is stacked closely together. In contrast, by adjusting the line spacing between the appointment information (e.g., title, doctor's name, and location) in Version B, the readability of the information and the speed at which users can recognize the information has been improved. This design reduces the user's time on the page.</div>
+                        </div>
+                    </div>
+                    <div class="paragraph-space"></div>
+                    <div class="small-title-style">Time to first click: The time (in milliseconds) for the user to perform the first click.</div>
+                    <div class="hyp-container">
+                        <div class="null-hyp">
+                            <div class="small-content-style"><span class="sub-title">Null Hypothesis: </span>Users of version A and version B have the same first click time.</div>
+                            <div class="small-paragraph-space"></div>
+                            <div class="small-content-style"><span class="sub-title">Predictions with justification: </span>we will reject the null hypothesis if version B's important elements are more accessible and the page layout is clear, thus speeding up user interaction.</div>
+                        </div>
+                        <div class="hyp-vertical-line"></div>
+                        <div class="alter-hyp">                            
+                            <div class="small-content-style"><span class="sub-title">Alternative hypothesis: </span>Users of Version B have a shorter time to first click than Version A.</div>
+                            <div class="small-paragraph-space"></div>
+                            <div class="small-content-style"><span class="sub-title">Reasoning: </span>In version A, the same color was used for all appointment information. In contrast, in version B, the color of the doctor's name has been adjusted to make it stand out more in comparison to the rest of the appointment information. This design is intended to help users recognize key information more quickly, thus speeding up their execution of targeted actions, such as clicking the Appointment button.</div>
+                        </div>
+                    </div>
+                </section>
+                <div class="paragraph-space"></div>
+                <section id="run-statistical-tests">
+                    <h3>Run Statistical Tests on the Data</h3>
+                    <div class="small-content-style">Now it was time to bring the high-fidelity wireframe to life using HTML and CSS. To view the final design, check <a class="hyperlink" href="redesign.html" aria-label="go to redesign page">Redesign Page !!</a> Please be curious to try all the components that appear to have responsive designs as well as different screen sizes!</div>    
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">Copyright 2024 Shiyu Yan</div>
+            </div>
+        </footer>
+    </body>
+  
+</html>
