@@ -110,7 +110,7 @@
                             <li>p-value: It is likely that version B is better than version A at reducing false clicks. This is because the probability of observing the occurrence of the existing data is 0.0015 (p-value) if the null hypothesis is true.</li>
                         </ul>
                     </div>
-                    <div class="small-content-style"><span class="sub-title">We reject the null hypothesis. </span> This result validates the effectiveness of the Version B design improvement of reducing false clicks by changing the background color of the buttons, which improves the usability of the user interface and the overall user experience.</div>
+                    <div class="small-content-style"><span class="sub-title">We reject the null hypothesis,</span> since the p-value is less than the typical significance level of 0.05. This result validates the effectiveness of the Version B design improvement of reducing false clicks by changing the background color of the buttons, which improves the usability of the user interface.</div>
                     <!-- Time on page -->
                     <div class="paragraph-space"></div>
                     <div class="small-title-style">Time on page</div>    
@@ -121,11 +121,12 @@
                     <div class="small-content-style"><span class="sub-title">Important Values:</span></div>
                     <div class="small-content-style">
                         <ul>
-                            <li>T-score: the average time on page for version B is significantly lower than that for version A, in line with our alternative hypothesis, according to a negative T-score -8.32.</li>
+                            <li>T-score: the time on page for version B is significantly different from that for version A, according to a negative T-score -8.32.</li>
+                            <li>Degrees of Freedom: This represent the variability of the data. Combine 26 (df) and -8.32 (T-score) to consult T-distribution table to get one tail t-test p-value.</li>
                             <li>P-value (B < A): there is a 0.00000039% (p-value) chance that there is no difference between version A and Version B.</li>
                         </ul>
                     </div>
-                    <div class="small-content-style"><span class="sub-title">We reject the null hypothesis. </span> The changes made such as increasing line spacing of important information in version B in version B are very likely effective, making the interface more efficient and thereby reducing the time users need to spend on the page compared to version A.</div>
+                    <div class="small-content-style"><span class="sub-title">We reject the null hypothesis, </span> since the p-value is less than the typical significance level of 0.05. The changes made such as increasing line spacing of important information in version B in version B are very likely effective, making the interface more efficient and thereby reducing the time users need to spend on the page compared to version A.</div>
                     <!-- Time to first click -->
                     <div class="paragraph-space"></div>
                     <div class="small-title-style">Time to first click</div>    
@@ -136,11 +137,12 @@
                     <div class="small-content-style"><span class="sub-title">Important Values:</span></div>
                     <div class="small-content-style">
                         <ul>
-                            <li>T-score: the average time to the first click for version B is significantly less than that for version A, aligning perfectly with our alternative hypothesis, according to negative T-score -4.75.</li>
+                            <li>T-score: the time to the first click for version B is significantly different from that for version A, according to negative T-score -4.75.</li>
+                            <li>Degrees of Freedom: This represent the variability of the data. Combine 27 (df) and -4.75 (T-score) to consult T-distribution table to get one tail t-test p-value.</li>
                             <li>P-value (B < A): there is a 0.0029% (p-value) chance that there is no difference between version A and Version B.</li>
                         </ul>
                     </div>
-                    <div class="small-content-style"><span class="sub-title">We reject the null hypothesis. </span>The design modifications such as highlighting important information in Version B have successfully made it easier and quicker for users to interact with the page, leading to a faster first click.</div>
+                    <div class="small-content-style"><span class="sub-title">We reject the null hypothesis, </span> since the p-value is less than the typical significance level of 0.05. The design modifications such as highlighting important information in Version B have successfully made it easier and quicker for users to interact with the page, leading to a faster first click.</div>
                     <div class="paragraph-space"></div>
                     <div class="small-title-style">Summary Statistics</div> 
                     <div class="small-content-style">In our A/B testing of the user interface design for versions A and B, we analyzed data from 24 users and captured several key metrics: false click rate, time on page, and time to first click. especially, the average time on page was <span class="sub-title">36.1 seconds for version A</span> and <span class="sub-title">10.5 seconds for version B</span>, and the time to first click was <span class="sub-title">14.5 seconds for version A</span> and <span class="sub-title">5.9 seconds for version B</span>. This proves a significant impact of the design, with version B clearly outperforming version A.</div>
